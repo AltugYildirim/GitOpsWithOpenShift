@@ -2,7 +2,7 @@ argocd cluster list
 
 argocd repo add https://github.com/AltugYildirim/GitOpsWithOpenShift.git
 
-argocd app create --project default --name dev-reversewords --repo https://github.com/AltugYildirim/GitOpsWithOpenShift.git --path /declarationFiles --dest-server https://kubernetes.default.svc --dest-namespace gitopswithopenshift --revision master
+argocd app create --project default --name dev-reversewords --repo https://github.com/AltugYildirim/GitOpsWithOpenShift.git --path declarationFiles --dest-server https://kubernetes.default.svc --dest-namespace gitopswithopenshift --revision dev
 
 argocd app sync dev-reversewords
 
