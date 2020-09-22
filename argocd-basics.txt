@@ -1,0 +1,2 @@
+argocd cluster list
+argocd repo add https://github.com/AltugYildirim/GitOpsWithOpenShift.git
