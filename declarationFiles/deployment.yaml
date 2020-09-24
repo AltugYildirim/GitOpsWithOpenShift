@@ -22,7 +22,7 @@ spec:
           name: http
         env:
         - name: RELEASE
-          value: "Base release"
+          value: "SoftwareONE GitOps Demo"
         livenessProbe:
           httpGet:
             path: /health
