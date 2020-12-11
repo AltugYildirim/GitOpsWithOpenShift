@@ -5,7 +5,7 @@ metadata:
   labels:
     app: reverse-words
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: reverse-words
@@ -22,7 +22,7 @@ spec:
           name: http
         env:
         - name: RELEASE
-          value: "Base release"
+          value: "Hello World"
         livenessProbe:
           httpGet:
             path: /health
