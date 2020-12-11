@@ -1,0 +1,17 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: reverse
+  namespace: gitopswithopenshift
+  labels:
+    app: reverse-words
+    app.kubernetes.io/instance: gitops-intro
+spec:
+  host: reverse-test.apps.n3ztso2x.westeurope.aroapp.io
+  to:
+    kind: Service
+    name: reverse-words
+    weight: 100
+  port:
+    targetPort: http
+  wildcardPolicy: None
