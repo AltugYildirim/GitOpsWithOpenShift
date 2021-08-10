@@ -7,4 +7,3 @@ argocd app create --project default --name dev-reversewords --repo https://githu
 argocd app sync dev-reversewords
 
 argocd app get dev-reverseword
-
